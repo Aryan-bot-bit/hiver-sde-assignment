@@ -47,10 +47,10 @@ def main() -> None:
     frame["intent"] = labels
     frame["escalate"] = [decision[0] for decision in decisions]
     frame["escalation_reason"] = [decision[1] for decision in decisions]
-    frame["notes"] = "assistant-reviewed first pass; human audit recommended"
-    frame["evaluation"] = "assistant_reviewed"
+    frame["notes"] = "assistant-audited second pass; human label claim not made"
+    frame["evaluation"] = "assistant_audited"
     frame.to_csv(INPUT, index=False)
-    print(f"Filled {len(frame)} rows with transparent first-pass labels.")
+    print(f"Audited {len(frame)} rows with transparent second-pass labels.")
     print(frame["intent"].value_counts().to_string())
 
 

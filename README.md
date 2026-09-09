@@ -79,7 +79,7 @@ The system can classify the request and mark it for **human escalation** rather 
 
 ### 6. Evaluation
 
-The project contains a **200-example assistant-reviewed golden-set first pass**. The `evaluation` column records this provenance as `assistant_reviewed`; a human audit is still required before claiming a hand-labelled set.
+The project contains a **200-example assistant-audited golden-set second pass**. The `evaluation` column records this provenance as `assistant_audited`; a human audit is still required before claiming a hand-labelled set.
 
 The evaluation measures:
 
