@@ -79,7 +79,7 @@ The system can classify the request and mark it for **human escalation** rather 
 
 ### 6. Evaluation
 
-The project contains a **200-example manually reviewed golden evaluation set**.
+The project contains a **200-example assistant-reviewed golden-set first pass**. The `evaluation` column records this provenance as `assistant_reviewed`; a human audit is still required before claiming a hand-labelled set.
 
 The evaluation measures:
 
@@ -88,9 +88,9 @@ The evaluation measures:
 * Recall
 * F1-score
 * Escalation accuracy
-* Reply quality
+* Reply-quality rubric (manual/LLM scoring is not automated in this baseline)
 
-Reply quality is evaluated using:
+Reply quality should be scored using:
 
 1. Grounding
 2. Relevance
