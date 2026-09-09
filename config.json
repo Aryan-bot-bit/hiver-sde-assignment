@@ -1,0 +1,9 @@
+{
+  "brand": "AmazonHelp",
+  "sample_size": 12000,
+  "gold_size": 200,
+  "random_state": 42,
+  "data_path": "data/row/twcs.csv",
+  "prepared_path": "artifacts/amazonhelp_pairs.csv",
+  "gold_path": "data/golden/amazonhelp_gold.csv"
+}
